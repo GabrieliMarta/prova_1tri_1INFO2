@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-
-
+   let salário = 1.320;
+   const inflação = Number(prompt(`Informe a inflação anual`));
     //PROCESSAMENTO
-
+    const resolução = inflação/100;
+ const total = inflação * salário;
+ 
 
     //SAÍDA
-
+alert (`O valor do salário mínimo em 2024 com a presença da inflação será R$  ${total.toFixed(2).replace(".",",")}`);
+//PROBLEMA 
 </script>

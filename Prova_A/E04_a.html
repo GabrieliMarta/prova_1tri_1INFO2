@@ -8,11 +8,14 @@
     */
 
     //ENTRADA
-
+    const idade = Number(prompt(`Insira a idade do Pet`));
+    const preco1 = Number(prompt(`Insira o preço da consulta anual`));
+    const preco2 = Number(prompt(`Insira o preço da aplicação da vacina`));
 
     //PROCESSAMENTO
-
-
+    const resolução1 = idade * preco1;
+    const resolução2 = idade * preco2;
+    const total = resolução1 + resolução2
     //SAÍDA
-
+alert (`O valor dos gastos com os cuidados necessário serão de R$ ${total.toFixed(2).replace(".",",")}`);
 </script>
